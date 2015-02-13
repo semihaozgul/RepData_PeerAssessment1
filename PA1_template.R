@@ -1,6 +1,7 @@
 setwd("C:/Users/asus/Desktop/30.10.2014/coursera")
 Sys.setlocale("LC_TIME", "English")
 data=read.csv("activity.csv",stringsAsFactors=TRUE)
+library(lattice)
 # Calculating  mean total number of steps taken per day
 sums=aggregate(steps~ date,data,sum) 
 hist(sums$steps,xlab=" ",main="Sum of steps taken per day",col="blue")
