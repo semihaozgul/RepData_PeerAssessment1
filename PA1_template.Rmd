@@ -7,8 +7,7 @@ This file consist multiple parts for Activity Monitoring Data which is about per
 
 ```{r loading}
 library(knitr)
-opts_knit$set(root.dir=normalizePath('../'))
-opts_chunk$set(fig.path = "../figures/",dev='png')
+
 data=read.csv("activity.csv")
 Sys.setlocale("LC_TIME", "English")
 library(lattice)
